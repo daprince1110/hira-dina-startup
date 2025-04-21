@@ -25,7 +25,7 @@ export default function LoginPage() {
 
     try {
       // Simple hardcoded credentials check
-      if ((email === 'user@example.com' && password === 'password') || email === 'hiraali0335@gmail.com' && password === 'IHateAnas')) {
+      if ((email === 'user@example.com' && password === 'password') || (email === 'hiraali0335@gmail.com' && password === 'IHateAnas')) {
         // Set authentication flag in localStorage
         window.localStorage.setItem('isAuthenticated', 'true')
         // Set user data if needed
