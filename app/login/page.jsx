@@ -18,14 +18,18 @@ export default function LoginPage() {
   const [isLoading, setIsLoading] = useState(false)
   const router = useRouter()
 
+  if (window.localStorage.getItem('isAuthenticated')) {
+    router.push('/dashboard')
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault()
     setIsLoading(true)
     setError('')
-
+ 
     try {
       // Simple hardcoded credentials check
-      if ((email === 'user@example.com' && password === 'password') || (email === 'hiraali0335@gmail.com' && password === 'IHateAnas')) {
+      if ((email === 'user@example.com' && password === 'password') || (email === 'hiraali0335@gmail.com' && password === 'IHateAnas') || (email === 'almackayj@gmail.com' && password === 'Cougar') || (email ==="Ashakeel0901@my.msutexas.edu" && password ==="Lion")) {
         // Set authentication flag in localStorage
         window.localStorage.setItem('isAuthenticated', 'true')
         // Set user data if needed

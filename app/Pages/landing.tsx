@@ -26,7 +26,7 @@ export default function LandingPage() {
             </Link>
           </nav>
           <div className="auth-buttons">
-            <Link href="/dashboard" className="login-link">
+            <Link href="/login" className="login-link">
               Log in
             </Link>
             <Button className="cta-button" asChild>
