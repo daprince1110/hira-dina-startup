@@ -18,7 +18,7 @@ export default function LoginPage() {
   const [isLoading, setIsLoading] = useState(false)
   const router = useRouter()
 
-  if (window.localStorage.getItem('isAuthenticated')) {
+  if (typeof window !== "undefined" && window.localStorage.getItem('isAuthenticated')) {
     router.push('/dashboard')
   }
 
